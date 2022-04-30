@@ -1,0 +1,57 @@
+.model SHIFTER16
+.inputs S15 S14 S13 S12 S11 S10 S9 S8 S7 S6 S5 S4 S3 S2 S1 S0 control
+.outputs O15 O14 O13 O12 O11 O10 O9 O8 O7 O6 O5 O4 O3 O2 O1 O0
+
+.subckt not x=control z=not_control
+.subckt and x=S15 y=control z=and_rosso15
+.subckt and x=S14 y=not_control z=O15 #and_blu14
+.subckt and x=S14 y=control z=and_rosso14
+.subckt and x=S13 y=not_control z=and_blu13
+.subckt and x=S13 y=control z=and_rosso13
+.subckt and x=S12 y=not_control z=and_blu12
+.subckt and x=S12 y=control z=and_rosso12
+.subckt and x=S11 y=not_control z=and_blu11
+.subckt and x=S11 y=control z=and_rosso11
+.subckt and x=S10 y=not_control z=and_blu10
+.subckt and x=S10 y=control z=and_rosso10
+.subckt and x=S9 y=not_control z=and_blu9
+.subckt and x=S9 y=control z=and_rosso9
+.subckt and x=S8 y=not_control z=and_blu8
+.subckt and x=S8 y=control z=and_rosso8
+.subckt and x=S7 y=not_control z=and_blu7
+.subckt and x=S7 y=control z=and_rosso7  
+.subckt and x=S6 y=not_control z=and_blu6
+.subckt and x=S6 y=control z=and_rosso6
+.subckt and x=S5 y=not_control z=and_blu5
+.subckt and x=S5 y=control z=and_rosso5
+.subckt and x=S4 y=not_control z=and_blu4
+.subckt and x=S4 y=control z=and_rosso4
+.subckt and x=S3 y=not_control z=and_blu3
+.subckt and x=S3 y=control z=and_rosso3
+.subckt and x=S2 y=not_control z=and_blu2
+.subckt and x=S2 y=control z=and_rosso2
+.subckt and x=S1 y=not_control z=and_blu1
+.subckt and x=S1 y=control z=O0 #and_rosso1
+.subckt and x=S0 y=not_control z=and_blu0
+
+.subckt or x=and_rosso15 y=and_blu13 z=O14
+.subckt or x=and_rosso14 y=and_blu12 z=O13
+.subckt or x=and_rosso13 y=and_blu11 z=O12
+.subckt or x=and_rosso12 y=and_blu10 z=O11
+.subckt or x=and_rosso11 y=and_blu9 z=O10
+.subckt or x=and_rosso10 y=and_blu8 z=O9
+.subckt or x=and_rosso9 y=and_blu7 z=O8
+.subckt or x=and_rosso8 y=and_blu6 z=O7
+.subckt or x=and_rosso7 y=and_blu5 z=O6
+.subckt or x=and_rosso6 y=and_blu4 z=O5
+.subckt or x=and_rosso5 y=and_blu3 z=O4
+.subckt or x=and_rosso4 y=and_blu2 z=O3
+.subckt or x=and_rosso3 y=and_blu1 z=O2
+.subckt or x=and_rosso2 y=and_blu0 z=O1
+
+.search not.blif
+.search and.blif
+.search or.blif
+
+.end
+ 

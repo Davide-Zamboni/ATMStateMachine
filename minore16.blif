@@ -1,0 +1,38 @@
+.model MINORE16 
+.inputs a15 a14 a13 a12 a11 a10 a9 a8 a7 a6 a5 a4 a3 a2 a1 a0 b15 b14 b13 b12 b11 b10 b9 b8 b7 b6 b5 b4 b3 b2 b1 b0
+.outputs altb
+.subckt xor x=a15 y=b15 z=c15
+.subckt xor x=a14 y=b14 z=c14
+.subckt xor x=a13 y=b13 z=c13
+.subckt xor x=a12 y=b12 z=c12
+.subckt xor x=a11 y=b11 z=c11
+.subckt xor x=a10 y=b10 z=c10
+.subckt xor x=a9 y=b9 z=c9
+.subckt xor x=a8 y=b8 z=c8
+.subckt xor x=a7 y=b7 z=c7
+.subckt xor x=a6 y=b6 z=c6
+.subckt xor x=a5 y=b5 z=c5
+.subckt xor x=a4 y=b4 z=c4
+.subckt xor x=a3 y=b3 z=c3
+.subckt xor x=a2 y=b2 z=c2
+.subckt xor x=a1 y=b1 z=c1
+.subckt xor x=a0 y=b0 z=c0
+.names b15 b14 b13 b12 b11 b10 b9 b8 b7 b6 b5 b4 b3 b2 b1 b0 c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0 altb
+1---------------1--------------- 1
+-1--------------01-------------- 1
+--1-------------001------------- 1
+---1------------0001------------ 1
+----1-----------00001----------- 1
+-----1----------000001---------- 1
+------1---------0000001--------- 1
+-------1--------00000001-------- 1
+--------1-------000000001------- 1
+---------1------0000000001------ 1
+----------1-----00000000001----- 1
+-----------1----000000000001---- 1
+------------1---0000000000001--- 1
+-------------1--00000000000001-- 1
+--------------1-000000000000001- 1
+---------------10000000000000001 1
+.search xor.blif
+.end

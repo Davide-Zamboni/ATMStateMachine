@@ -1,0 +1,35 @@
+.model MUX10 
+.inputs a9 a8 a7 a6 a5 a4 a3 a2 a1 a0 b9 b8 b7 b6 b5 b4 b3 b2 b1 b0 sel
+.outputs o9 o8 o7 o6 o5 o4 o3 o2 o1 o0
+
+.names sel a9 b9 o9
+11- 1
+0-1 1
+.names sel a8 b8 o8 
+11- 1
+0-1 1
+.names sel a7 b7 o7
+11- 1
+0-1 1
+.names sel a6 b6 o6 
+11- 1
+0-1 1
+.names sel a5 b5 o5
+11- 1
+0-1 1
+.names sel a4 b4 o4 
+11- 1
+0-1 1
+.names sel a3 b3 o3
+11- 1
+0-1 1
+.names sel a2 b2 o2
+11- 1
+0-1 1
+.names sel a1 b1 o1
+11- 1
+0-1 1
+.names sel a0 b0 o0
+11- 1
+0-1 1
+.end
