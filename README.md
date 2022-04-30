@@ -1,7 +1,8 @@
-# SIS_Project
+# Controllo dell’erogazione di denaro di un bancomat
 
 Il dispositivo da noi progettato consente di controllare l’erogazione di denaro di un bancomat. Tale dispositivo é stato modellato come circuito sequenziale composto da una parte di controllo (FSM) ed un’altra adibita all'elaborazione dei dati (Datapath).
 Il circuito ha 4 ingressi nel seguente ordine:
+
 • BANCOMAT_INSERITO (1 bit) • CODICE (4 bit)
 • CASH_RICHIESTO (10 bit)
 • CASH_DISPONIBILE (16 bit)
